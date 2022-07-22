@@ -18,21 +18,23 @@ import (
 
 func main(){
   if err := godotenv.Load(); err != nil && os.Getenv("TOKEN") == "" {
-    log.Fatal("Error loading the .env file,", err)
+    log.Fatal("Error loading the .env file:", err)
   }
 
   token := os.Getenv("TOKEN")
 
+  // Creating a new Discord section
   dg, err := discordgo.New("Bot " + token)
   if err != nil {
-    fmt.Println("Error creation Discord section,", err)
+    fmt.Println("Error creating Discord section:", err)
     return
   }
-  
-  dg.AddHandler(messageCreate)
 
+  dg.AddHandler(messageCreate)
+  
+  // Open a websocket connection to Discord
   if err := dg.Open(); err != nil {
-    fmt.Println("Chore:", err)
+    fmt.Println("Error oppening connection:", err)
     return
   }
 
