@@ -1,0 +1,16 @@
+{
+  "name": "sedcord",
+  "description": "A Discord bot to run sed at messages. Written in Go.",
+  "repository": "https://github.com/RedsonBr140/sedcord-go",
+  "keywords": [
+    "discord",
+    "bot",
+    "sed"
+  ],
+  "env": {
+    "TOKEN": {
+      "description": "Your Discord bot token",
+      "required": true
+    }
+  }
+}
