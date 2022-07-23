@@ -11,7 +11,7 @@ A simple bot to run sed at Discord messages.
 
 ### Local/VPS
 ```sh
-git clone https://github.com/RedsonBr140/sedcord-go.git
+git clone https://codeberg.org/redson/sedcord-go.git
 cd sedcord-go
 cp .env.sample .env
 # Edit the .env file
