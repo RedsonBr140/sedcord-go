@@ -11,7 +11,7 @@ import (
   "strings"
   "syscall"
 
-  "github.com/RedsonBr140/sedcord-go/events"
+  "codeberg.org/redson/sedcord-go/events"
   "github.com/bwmarrin/discordgo"
   "github.com/joho/godotenv"
 )

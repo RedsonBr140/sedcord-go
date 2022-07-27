@@ -1,4 +1,4 @@
-module github.com/RedsonBr140/sedcord-go
+module codeberg.org/redson/sedcord-go
 
 go 1.18
 
