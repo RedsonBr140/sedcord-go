@@ -11,6 +11,7 @@ import (
   "strings"
   "syscall"
 
+  "github.com/RedsonBr140/sedcord-go/events"
   "github.com/bwmarrin/discordgo"
   "github.com/joho/godotenv"
 )
@@ -30,7 +31,7 @@ func main(){
     return
   }
 
-  dg.AddHandler(ready)
+  dg.AddHandler(events.Ready)
   dg.AddHandler(messageCreate)
 
   // Open a websocket connection to Discord
@@ -92,8 +93,3 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate){
   }
 }
 
-func ready(s *discordgo.Session, r *discordgo.Ready){
-  log.Printf("Logged in as: %v#%v", s.State.User.Username, s.State.User.Discriminator)
-  status := fmt.Sprintf("sed at %d servers", len(r.Guilds))
-  s.UpdateGameStatus(0, status)
-}
