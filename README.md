@@ -11,15 +11,17 @@ A simple bot to run sed at Discord messages.
 
 ### Local/VPS
 ```sh
-git clone https://codeberg.org/redson/sedcord-go.git
+git clone https://github.com/RedsonBr140/sedcord-go.git
 cd sedcord-go
 cp .env.sample .env
 # Edit the .env file
 go run main.go
 ```
+<!--
+Not anymore, thank you heroku.
 ### Add sedcord to your server
 Don't want to self-host the bot? Ok, you can add it to you server by clicking [here](https://discord.com/api/oauth2/authorize?client_id=982312252793307196&permissions=8&scope=bot)
-
+-->
 As the bot is hosted on Heroku, it is offline between `00:00 -0300` and `06:00 -0300`
 
 ## ⌨ Usage
