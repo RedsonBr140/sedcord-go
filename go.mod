@@ -3,7 +3,7 @@ module codeberg.org/redson/sedcord-go
 go 1.18
 
 require (
-	github.com/bwmarrin/discordgo v0.25.0
+	github.com/bwmarrin/discordgo v0.26.1
 	github.com/joho/godotenv v1.4.0
 )
 
