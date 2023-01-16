@@ -1,6 +1,9 @@
 <h1 align=center><code>sedcord-go</code></h1>
 <p align=center>Edit messages without editing messages</p>
 
+[![Go Report Card](https://goreportcard.com/badge/codeberg.org/redson/sedcord-go)](https://goreportcard.com/report/codeberg.org/redson/sedcord-go)
+[![CodeQL](https://github.com/RedsonBr140/sedcord-go/actions/workflows/codeql.yml/badge.svg)](https://github.com/RedsonBr140/sedcord-go/actions/workflows/codeql.yml)
+
 ## 💡About
 A simple bot to run sed at Discord messages.
 
