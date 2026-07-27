@@ -1,9 +1,9 @@
 module codeberg.org/redson/sedcord-go
 
-go 1.18
+go 1.23.0
 
 require (
-	github.com/bwmarrin/discordgo v0.28.1
+	github.com/bwmarrin/discordgo v0.29.0
 	github.com/joho/godotenv v1.5.1
 )
 
